@@ -1,0 +1,21 @@
+<div class="container py-3">
+    <div class="card">
+        <div class="row ">
+        <div class="col-md-4">
+            <img [src]="product.image" class="w-100">
+            </div>
+            <div class="col-md-8 px-3">
+            <div class="card-block px-3">
+                <h4 class="card-title">{{ product.title }}</h4>
+                <p class="card-text">{{ product.description}}</p>
+                <p class="card-text">{{ product.category}}</p>
+                <button (click)="addToCart(product)" class="btn btn-warning">Add to cart</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <br><a [routerLink]="['/home']">Ir a listado de productos</a>
+</div>
+
+    
